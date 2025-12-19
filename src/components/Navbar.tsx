@@ -26,12 +26,16 @@ const Navbar = () => {
         </div>
         
         <div className="flex items-center gap-3">
-          <Button variant="ghost" size="sm" className="hidden sm:inline-flex">
-            Giriş Yap
-          </Button>
-          <Button variant="hero" size="sm">
-            Kayıt Ol
-          </Button>
+          <Link to="/auth">
+            <Button variant="ghost" size="sm" className="hidden sm:inline-flex">
+              Giriş Yap
+            </Button>
+          </Link>
+          <Link to="/auth">
+            <Button variant="hero" size="sm">
+              Kayıt Ol
+            </Button>
+          </Link>
         </div>
       </nav>
     </header>
